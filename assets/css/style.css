@@ -245,18 +245,7 @@ button,input{
     height:100vh;
     background-position: center center;
 }
-.home__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* Moves content to the top by default */
-    margin-top: 240px; /* Add margin on top */
-}
-.hello{
 
-    flex-direction: column;
-    justify-content: flex-start; /* Moves content to the top by default */
-    margin-top: -18px;
-}
 
 .home__title{
     font-size: var(--biggest-font-size);
@@ -270,11 +259,9 @@ button,input{
 
 .home__description{
     
+    max-width: 450px;
     font-size: 12px; /* Adjust this size as needed */
-    line-height: 1.4; /* Improves readability */
-    max-width: 650px;
-    text-align: justify;
-    padding-right: 6rem;
+    line-height: 1.4;
     margin-bottom: var(--mb-2);
    
 }
@@ -1222,11 +1209,7 @@ textarea.input{
 }
 
 @media screen and (max-width:768px){
-    .home__description{
-        max-width: 500px;
-        /* Choose a clean font */
-       text-align: justify;
-    }
+
     .about__img{
         width: 250px;
     }
@@ -1317,34 +1300,7 @@ textarea.input{
         justify-self: center;
         margin-top: 50px;
     }
-    .home__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start; /* Moves content to the top by default */
-        margin-top: 90px; /* Add margin on top */
-    }
-    .hello{
     
-        flex-direction: column;
-        justify-content: flex-start; /* Moves content to the top by default */
-        margin-top: 10px;
-    }
-    
-    .home__title{
-        font-size: var(--biggest-font-size);
-    }
-    
-    .home__subtitle{
-        font-size: var(--h3-font-size);
-        font-weight: var(--font-medium);
-        margin-bottom: var(--mb-0-75);
-    }
-    
-    .home__description{
-        max-width: 900px;
-        /* Choose a clean font */
-       text-align: justify;
-    }
     .home__social{
         left: initial;
         right: -1rem;
@@ -1366,9 +1322,7 @@ textarea.input{
         display: none;
     }
     .about__description{
-        max-width: 500px;
-             /* Choose a clean font */
-            text-align: justify;
+       padding: 0;
     }
     .about__info{
         grid-template-columns: repeat(3,1fr);
@@ -1392,17 +1346,6 @@ textarea.input{
     .work__container{
         grid-template-columns: 300px;
     }
-    .work__filters {
-        display: flex; /* Ensures items are in a row */
-        flex-wrap: wrap; /* Allows items to wrap if the container is too small */
-        justify-content: center; /* Center aligns the items */
-    }
-    
-    .work__item {
-        margin: 0 10px; /* Adjust this value for spacing between items */
-        padding: 5px 10px; /* Optional: add some padding for better click area */
-        cursor: pointer; /* Changes the cursor to pointer for better UX */
-    }
     
     .footer__container{
         grid-template-columns: 1fr;
@@ -1422,46 +1365,13 @@ textarea.input{
         width: 200px;
         margin-top: 30px;
     }
-    .home__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start; /* Moves content to the top by default */
-        margin-top: 50px; /* Add margin on top */
-    }
-    .hello{
-    
-        flex-direction: column;
-        justify-content: flex-start; /* Moves content to the top by default */
-        margin-top: -45px;
-    }
-    
     .home__title{
-        font-size: var(--biggest-font-size);
+        font-size: var(--h1-font-size);
     }
-    
     .home__subtitle{
-        font-size: var(--h3-font-size);
-        font-weight: var(--font-medium);
-        margin-bottom: var(--mb-0-75);
+        font-size: var(--normal-font-size);
     }
-    
-    .home__description{
-        max-width: 500px;
-        margin-bottom: var(--mb-2);
-        font-size: 12px; /* Adjust this size as needed */
-        line-height: 1.4; /* Improves readability */
-     
-        font-family: var(--font-medium); /* Choose a clean font */
-        text-align: justify;
-    }
-.about__description{
-    max-width: 300px;
-        margin-bottom: var(--mb-2);
-        font-size: 12px; /* Adjust this size as needed */
-        line-height: 1.4; /* Improves readability */
-        font-family: var(--font-medium); /* Choose a clean font */
-        text-align: justify;
-}
+   
     .about__info{
         grid-template-columns: repeat(2,1fr);
         row-gap: .5rem;
