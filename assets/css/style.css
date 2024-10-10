@@ -1336,11 +1336,7 @@ textarea.input{
     .services__modal-description{
         padding: 0;
     }
-    .services__container{
-        grid-template-columns: repeat(2,230px);
-        justify-content: center;
-        column-gap: 2rem;
-    }
+    
 
     .contact__container,
     .work__container{
